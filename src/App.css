@@ -1,0 +1,42 @@
+.cardbackground {
+    background-color: #f3f4f7;
+    margin-bottom: 20px;
+}
+.navbar {
+    background-color: #ec5656;
+    /* margin-bottom: 650px; */
+    height: 60px;
+    position: relative;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+.photo {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.search{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.addbutton{
+    color: #dc7777;
+}
+.detail{
+    margin-top: 10px;
+}
+
+.display{
+    width: 847px;
+    height: 597px;
+    overflow: auto;
+
+}

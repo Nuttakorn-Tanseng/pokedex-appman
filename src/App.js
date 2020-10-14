@@ -1,5 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import Nav from 'react-bootstrap/Nav'
 import './App.css'
+import DataFetching from './DataFetching'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
+import axios from 'axios'
+
 
 const COLORS = {
   Psychic: "#f8a5c2",
@@ -15,12 +24,44 @@ const COLORS = {
   Fire: "#eb4d4b"
 }
 
+
 class App extends Component {
+
+
+
   render() {
+
+    function showcard() {
+
+    }
+
     return (
       <div className="App">
+        
+        <center><h1>My Pokedex</h1></center>
+        <div className="display">
+
+
+        <DataFetching />
+        </div>
+
+        <Nav className="navbar navbar-light" >
+          <Button variant="danger" className="center" onClick={showcard}>
+            ADD
+          </Button>
+          {/* <Popup trigger={<Button variant="danger" className="center" onClick={showcard}>
+            ADD
+            </Button>} position="">
+            <div><DataFetching /></div>
+          </Popup> */}
+        </Nav>
+
+
       </div>
     )
+
+
+
   }
 }
 

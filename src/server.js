@@ -13,7 +13,7 @@ app.get('/api/cards', (req, res) => {
   if (_.every([name, type], item => item === undefined)) {
     return res.json({ cards: cards.slice(0, limit) })
   }
-
+  
   res.json({
     cards: _.filter(cards, card => {
       const name = _.toUpper(_.get(req, 'query.name', ''))
